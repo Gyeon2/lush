@@ -1,0 +1,107 @@
+/* 작은 사이즈 pc 레이아웃 깨지는 부분까지 위드 보장되는 지점*/
+
+@media screen and (max-width: 1300px) { /*1024보고 조정 *** 항상 최소값이 기준이어야 한다 ! */
+  .main_vis .inner {max-width: 550px;}
+  
+  /*배경 요소 */
+  .vd_wrap .img01 { height: auto; width: 60vw;}
+  .vd_wrap .img02 { height: auto; width: 20vw;}
+  .sc_value .right { height: auto; width: 25vw; bottom: 15vh;}
+  .fix_img .fix_mid { height: auto; width: 35vw;} 
+
+footer { padding: 100px 0 400px;}
+}
+
+
+/* 테블릿 */
+
+@media screen and (max-width: 1024px) { /*768을 보고 조정*/
+
+
+
+
+/* fix_menu*/
+.fix_menu ul li::after {display: block;}
+.fix_menu ul li a {display: none;}
+.fix_menu02 .right_box { height: 100px; width: 25px; font-size: 10px;}
+/*main*/
+.main_vis .t_box p { font-size: 15px;}
+.t_wrap p { width: 100%; margin-left: 0; margin-top: 30px; font-size: 15px;}
+.t_wrap p:first-child { margin-top: 0;}
+.sc_value .left { width: 40vw;}
+.sc_value .right { width: 30vw; bottom: 15vh;}
+.vd_wrap .img01 { width: 90vw;}
+
+
+/* fix_img */
+.fix_img .fix_right { width: 25vw; }
+.fix_img .fix_left { width: 25vw; }
+.fix_img .fix_b_left { width: 25vw;}
+.fix_img .fix_b_right { width: 25vw; }
+.fix_img .fix_mid { width: 40vw; top: 420vh;}
+.fix_img .fix_b2_right { width: 20vw;}
+.fix_img .fix_b2_left { width: 19vw;}
+
+
+/*footer */
+footer .f_bottom { height: auto; width: 90vw;}
+footer .f_right_bottom { height:auto; width: 30vw;}
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  
+/*fix요소*/
+.vd_wrap .img01 { width: 120vw; left: -50px; z-index: 1;}
+.vd_wrap .img02 { height: auto; width: 35vw;}
+.fix_img .fix_left { height: 30vh;}
+.fix_img .fix_right { height: auto; width: 40vw;}
+.fix_img .fix_b_left {height: auto; width: 50vw;}
+.fix_img .fix_b_right{  height: auto; width: 30vw;}
+.fix_img .fix_mid { height: auto; width: 50vw;} 
+.fix_img .fix_b2_left { width: 30vw; height: auto;}
+.fix_img .fix_b2_right { width: 30vw; height: auto;}
+
+
+
+.fix_menu ul li::after { margin-left: 7px; width: 7px; height: 7px;}
+/*header*/
+header .h_wrap h1 { width: 65px; height: 21px;}
+header .h_wrap .h_menu { display: none;}
+header .h_wrap .h_menu02 { display: block;}
+
+  /*main*/
+  
+  .title_txt { font-size: 38px;}
+  
+  .sub_tit {font-size: 14px;}
+  .t_wrap p { font-size: 13px;}
+
+
+  .main_vis .t_box em { font-size: 13px; margin-bottom: 15px;}
+  .main_vis .t_box h2 { font-size: 10vh; margin-bottom: 20px;}
+  .main_vis .t_box p { font-size: 13px;}
+
+  .sc_story .vd_box span { font-size: 10px;}
+  .sc_value .title_txt02 { font-size: 50px; margin-bottom: 30px;}
+  .sc_value .title_txt02 em{ font-size: 25px; margin-bottom: 15px;}
+  .sc_value .left { height: 30vh;}
+  .sc_charity .t_wrap_c p { font-size: 13px; margin-bottom: 15px;}
+  .sc_charity .slide_wrap .swiper-pagination-bullet { width: 10px; height: 10px;}
+  .sc_shop .title_txt {padding-left: 25px;}
+  .sc_shop ul {border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .sc_shop ul li:nth-child(2n-1) { margin-left: 0;}
+  .sc_shop ul li {width: calc((100% - 20px)/2); margin-left: 10px; margin-bottom: 30px; }
+  .sc_shop ul li strong { font-size: 13px;}
+  .sc_shop ul li p {font-size: 13px;}
+
+  /**/
+  footer { z-index: 0;}
+  footer .f_bottom { height: auto; width: 120vw; left: -30vw; }
+  footer address { font-size: 12px; }
+  footer .f_wrap .f_menu a {font-size: 12px;}
+  footer .f_wrap .copyright { font-size: 12px;}
+}

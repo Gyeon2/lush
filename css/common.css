@@ -1,0 +1,62 @@
+.blind{
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+@font-face {
+    font-family: handwritten;
+    src: url(../font/LushHandwritten_WLat_Bd.eot?#iefix);
+    src: url(../font/LushHandwritten_WLat_Bd.eot?#iefix) format("eot"), 
+    url(../font/LushHandwritten_WLat_Bd.woff) format("woff"),
+    url(../font/LushHandwritten_WLat_Bd.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: handwritten;
+    src: url(../font/LushHandwritten_WLat_Rg.eot?#iefix);
+    src: url(../font/LushHandwritten_WLat_Rg.eot?#iefix) format("eot"), 
+    url(../font/LushHandwritten_WLat_Rg.woff) format("woff"), 
+    url(../font/LushHandwritten_WLat_Rg.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+
+body{
+    font-size: 14px;
+    line-height: 20px;
+    font-family:'Roboto','Noto Sans KR', sans-serif;
+    color: #fff;
+    position: relative;
+    background: #000;
+}
+.inner {max-width: 750px; margin: 0 auto; padding: 0 30px; box-sizing: content-box;}
+
+/*백그라운드 영상*/
+.sc_area { padding: 150px 0;}
+  .box_wrap { }
+  .title_txt { 
+      font-size: 45px;
+    line-height: 44px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-family: handwritten;
+  
+}
+.sub_tit { font-weight: 300; font-size: 15px; line-height: 20px;  display: block; font-family: 'Noto Sans KR', sans-serif; color: #888787; letter-spacing: normal; margin-top: 10px; }
+.t_wrap { width: 100%; overflow: hidden;}
+.t_wrap p{
+    width: calc(50% - 15px); float: left;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-left: 30px;
+    letter-spacing: 0.02em;
+    }
+    .t_wrap p:first-child { margin-left: 0;}
+ 

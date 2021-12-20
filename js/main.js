@@ -5,7 +5,7 @@ $(function(){
     y:-20+'%'
 },{
     opacity:1,
-    stagger:0.1,// li의 순차대로 실행되는 것
+    stagger:0.1,
     duration:0.5,
     y:0
 })
@@ -14,7 +14,7 @@ menu.pause();//정지했다가 **
 
 
   $('.h_menu02').click(function(e){
-    e.preventDefault(); // a 태그 필수, a태그의 href 효과 지우기!!!!!!!!
+    e.preventDefault();
     $('.h_menu02_fix').addClass('on');
     menu.restart();//다시 닫았다가 눌러도 재시작 **
 })
@@ -22,7 +22,7 @@ menu.pause();//정지했다가 **
 $('.h_menu02_fix .close').click(function(e){
     e.preventDefault();
     $('.h_menu02_fix').removeClass('on');
-}) //달러 들어간건 제이쿼리 
+})
 
 
 
@@ -194,7 +194,7 @@ titEffect.fromTo('.main_vis .t_box',{
 let txtEffect = gsap.timeline({
   scrollTrigger:{
       trigger:'.sc_story',
-      start:"-20% 0%",// 첫번째 top은 element 기준의 시작점(start), 두번째는 브라우저의 시작점(scroll-start)
+      start:"-20% 0%",
       //markers:true,
 
   },
@@ -223,7 +223,7 @@ txtEffect.fromTo('.sc_story .t_wrap',{
   stagger:1,
   duration:0.5,
  
-})//이미지 효과 넣었고 두번째 -0.5는 좀 더 빨리 움직이도록 음수를 넣음
+})
 
 txtEffect.fromTo('.sc_story .vd_box',{
   opacity:0,
@@ -241,7 +241,7 @@ txtEffect.fromTo('.sc_story .vd_box',{
 let txtEffect1 = gsap.timeline({
   scrollTrigger:{
       trigger:'.sc_value',
-      start:"-20% 0%",// 첫번째 top은 element 기준의 시작점(start), 두번째는 브라우저의 시작점(scroll-start)
+      start:"-20% 0%", 
       //markers:true,
 
   },
@@ -367,9 +367,7 @@ txtEffect3.fromTo('.sc_shop ul',{
 
 
 
-/* 섹션마다 공통된 클래스 이름 붙이기  */
-//index-> 순서가져올때
-//eq->index선택할때 
+
 
 $('.sc_area').each(function(index, item){ 
 
@@ -377,11 +375,8 @@ $('.sc_area').each(function(index, item){
       scrollTrigger:{
           trigger:item,
           start:"top 80%",
-          // end:"bottom 0%",
-          //markers:true,
+ 
       onEnter: () => $('.fix_menu li').removeClass('active').eq(index).addClass('active'),
-      // onLeave: () => $('.fix_menu li').removeClass('active'),
-      // onEnterBack: () => $(this).addClass('revealed'),
       onLeaveBack: ()  => $('.fix_menu li').removeClass('active').eq(index).prev().addClass('active'),
       }
   })
@@ -391,7 +386,7 @@ $('.sc_area').each(function(index, item){
 $('.fix_menu a').click(function(e){
   e.preventDefault();
 link = $(this).attr('href');
-position = $(link).offset().top;// 위치를 알려주는 태그 
+position = $(link).offset().top;
 
 
 gsap.to('html',{'scrollTop':position, duration:1})

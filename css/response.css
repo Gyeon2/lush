@@ -57,7 +57,7 @@ footer .f_right_bottom { height:auto; width: 30vw;}
 /*fix요소*/
 .vd_wrap .img01 { width: 120vw; left: -50px; z-index: 1;}
 .vd_wrap .img02 { height: auto; width: 35vw;}
-.fix_img .fix_left { height: 30vh;}
+.fix_img .fix_left { }
 .fix_img .fix_right { height: auto; width: 40vw;}
 .fix_img .fix_b_left {height: auto; width: 50vw;}
 .fix_img .fix_b_right{  height: auto; width: 30vw;}

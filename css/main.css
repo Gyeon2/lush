@@ -46,7 +46,7 @@ writing-mode: vertical-lr;
  .fix_img{ width: 100%; position: absolute; z-index: 15; }
 .fix_img .fix_right { right: 0; position: absolute; top: 100vh;width: 25vh;}
  .fix_img .fix_left{left: 0; position: absolute; top: 120vh; width:13vw;}
- .fix_img .fix_mid { position: absolute; top: 400vh; right: 0;width: 25vw; }
+ .fix_img .fix_mid { position: absolute; top: 400vh; right: 0;width: 25vw; pointer-events: none;}
  .fix_img .fix_b_left { position: absolute;  top: 240vh; width: 15vw;}
  .fix_img .fix_b_right { position: absolute; width: 15vw; top: 260vh; right: 0;}
  .fix_img .fix_b2_right { position: absolute; width: 12vw; top: 520vh; right: 0;}
